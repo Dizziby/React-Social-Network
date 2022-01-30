@@ -1,0 +1,20 @@
+/*
+header {
+    background: #fff url(../img/timeline-1.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+*/
+
+.header {
+    grid-area: header;
+    background: #fff url(../../img/timeline-1.png)  no-repeat center;
+    background-size: 100%;
+}
+.header__nav {
+    padding: 325px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

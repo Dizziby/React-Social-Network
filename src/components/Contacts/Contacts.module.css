@@ -1,0 +1,19 @@
+.contacts {
+    grid-area: contacts;
+    background-color: #FDFDFD;
+
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+.title {
+    margin-bottom: 30px;
+}
+.search {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
