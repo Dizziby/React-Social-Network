@@ -5,12 +5,12 @@ import AddPost from "./AddPost/AddPost";
 
 const Posts = (props) => {
 
-    let postsItem = props.state.wallDate.postDate.map(el => <Post name={el.name} date={el.date} text={el.text}/>);
+    let postsItem = props.state.myPageData.postDate.map(el => <Post name={el.name} date={el.date} text={el.text}/>);
 
     return (
         <div className={styles.posts}>
             <div>
-                <AddPost state={props.state} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
+                <AddPost state={props.state} dispatch={props.dispatch}/>
             </div>
             <div>
                 {postsItem}

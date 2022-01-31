@@ -1,4 +1,7 @@
 .nav {
     grid-area: nav;
     background-color: #cccc33;
+
+    padding: 20px;
   }
+

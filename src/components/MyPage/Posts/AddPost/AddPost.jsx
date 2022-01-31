@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from './AddPost.module.css';
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../../redux/myPageRaducer";
+
 
 const AddPost = (props) => {
 
     let newPostElement = React.createRef();
 
-    let addPost = () => {
-        props.addPost();
+    let onAddPost = () => {
+        props.dispatch(addPostActionCreator());
     };
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+        props.dispatch(updateNewPostTextActionCreator(text));
     };
 
     return (
@@ -20,7 +22,7 @@ const AddPost = (props) => {
                 <textarea onChange={onPostChange} ref={newPostElement}></textarea>
             </div>
             <div>
-                <button onClick={addPost}>Publish</button>
+                <button onClick={onAddPost}>Publish</button>
             </div>
         </div>
     )

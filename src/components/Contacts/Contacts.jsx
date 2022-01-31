@@ -2,11 +2,9 @@ import React from 'react';
 import styles from './Contacts.module.css';
 import Contact from "./Contact/Contact";
 
-
-
 const Contacts = (props) => {
 
-    let ContactElement = props.contactsList.map(el => <Contact name={el.name} email={el.email}/>);
+    let ContactElement = props.contactsData.map(el => <Contact name={el.name} email={el.email}/>);
 
     return (
         <div className={styles.contacts}>

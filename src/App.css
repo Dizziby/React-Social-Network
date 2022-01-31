@@ -39,7 +39,7 @@ p {
 
 .app-wrapper {
     display: grid;
-    grid-template-areas: "header header header" "nav wall contacts";
+    grid-template-areas: "header header header" "nav wall contacts" "footer footer footer";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 20px;
