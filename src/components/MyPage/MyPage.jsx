@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './MyPage.module.css';
-import Posts from "./Posts/Posts";
+import PostsContainer from "./Posts/PostsContainer";
 
 const MyPage = (props) => {
     return (
         <div className={styles.wall}>
-            <Posts state={props.state} dispatch={props.dispatch}/>
+            <PostsContainer />
         </div>
     )
 }

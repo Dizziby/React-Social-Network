@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
-import Contacts from './components/Contacts/Contacts';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Messages from "./components/Messages/Messages";
@@ -11,6 +10,7 @@ import Images from "./components/Images/Images";
 import Videos from "./components/Videos/Videos";
 import Friends from "./components/Friends/Friends";
 import Logout from "./components/Logout/Logout";
+import ContactsContainer from "./components/Contacts/ContactsContainer";
 
 
 const App = (props) => {
@@ -18,7 +18,7 @@ const App = (props) => {
         <div className='app-wrapper'>
             <Header/>
             <Nav/>
-            <Contacts contactsData={props.state.contactsData}/>
+            <ContactsContainer/>
             <div className='app-wrapper-content'>
                 <Routes>
                     <Route path='/' element={<MyPage state={props.state} dispatch={props.dispatch}/>}/>

@@ -1,0 +1,15 @@
+.btn {
+    background-color: #1181B6;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.wrap {
+    height: 160px;
+    padding: 25px 25px;
+    background-color: #FDFDFD;
+    margin-bottom: 20px;
+}

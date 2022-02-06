@@ -3,7 +3,6 @@ import styles from './Contacts.module.css';
 import Contact from "./Contact/Contact";
 
 const Contacts = (props) => {
-
     let ContactElement = props.contactsData.map(el => <Contact name={el.name} email={el.email}/>);
 
     return (

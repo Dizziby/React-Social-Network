@@ -1,4 +1,4 @@
-import {ADD_POST, UPDATE_NEW_POST_TEXT} from "./actions";
+import {ADD_POST, UPDATE_NEW_POST_TEXT} from "./actionTypes";
 import myPageReducer from "./myPageRaducer";
 import contactsReducer from "./contactsReducer";
 
