@@ -12,6 +12,7 @@ header {
     background-size: 100%;
 
     height: 440px;
+    margin-bottom: 30px;
 }
 .header__nav {
     padding: 325px auto;

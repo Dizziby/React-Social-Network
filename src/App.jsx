@@ -17,18 +17,20 @@ const App = (props) => {
     return (
         <div className='app-wrapper'>
             <Header/>
-            <Nav/>
-            <ContactsContainer/>
-            <div className='app-wrapper-content'>
-                <Routes>
-                    <Route path='/' element={<MyPage state={props.state} dispatch={props.dispatch}/>}/>
-                    <Route path='/messages' element={<Messages/>}/>
-                    <Route path='/friends' element={<Friends/>}/>
-                    <Route path='/images' element={<Images/>}/>
-                    <Route path='/videos' element={<Videos/>}/>
-                    <Route path='/logout' element={<Logout/>}/>
-                </Routes>
-            </div>
+                <div className='app-container'>
+                    <Nav/>
+                    <div className='app-content'>
+                        <Routes>
+                            <Route path='/' element={<MyPage state={props.state} dispatch={props.dispatch}/>}/>
+                            <Route path='/messages' element={<Messages/>}/>
+                            <Route path='/friends' element={<Friends/>}/>
+                            <Route path='/images' element={<Images/>}/>
+                            <Route path='/videos' element={<Videos/>}/>
+                            <Route path='/logout' element={<Logout/>}/>
+                        </Routes>
+                    </div>
+                    <ContactsContainer/>
+                </div>
             <Footer/>
         </div>
     )

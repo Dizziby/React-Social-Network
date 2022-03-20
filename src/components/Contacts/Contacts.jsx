@@ -10,10 +10,12 @@ const Contacts = (props) => {
             <div className={styles.title}>
                 Friends
             </div>
-            <div className={styles.search}>
-                <input type='search' placeholder='Search Contacts...'></input>
+            <div>
+                <input className={styles.search} type='search' placeholder='  Search Contacts...'></input>
             </div>
-            {ContactElement}
+            <div className={styles.contactElement}>
+                {ContactElement}
+            </div>
         </div>
     )
 }

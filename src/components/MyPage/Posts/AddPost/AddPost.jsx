@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './AddPost.module.css'
+import logo from "../../../../img/user-avatar.jpg";
+
 
 const AddPost = (props) => {
     let newPostElement = React.createRef();
@@ -14,14 +16,14 @@ const AddPost = (props) => {
     };
 
     return (
-        <div className={styles.wrap}>
-            <div>
-                <div>
-                    <textarea onChange={onPostChange} ref={newPostElement}>{props.postText}</textarea>
-                </div>
-                <div>
+        <div className={styles.addPost}>
+            <div className={styles.avatar}>
+                <img src={logo} alt="logo"/>
+            </div>
+            <div className={styles.item}>
+                    <textarea onChange={onPostChange} ref={newPostElement} value={props.postText}
+                              className={styles.textarea}></textarea>
                     <button className={styles.btn} onClick={onAddPost}>Publish</button>
-                </div>
             </div>
 
         </div>
